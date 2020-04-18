@@ -5,7 +5,9 @@ function Header(props) {
   return (
     <header>
       <Navbar expand="md" bg="light" className="navbar-expand-md p-0">
-        <Navbar.Brand className="px-4 py-3 mb-0">Hilary Mallar</Navbar.Brand>
+        <Nav.Link href="/" className="pb-0">
+          <Navbar.Brand className="px-4 py-3 mb-0">Hilary Mallar</Navbar.Brand>
+        </Nav.Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
