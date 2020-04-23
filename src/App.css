@@ -1,5 +1,4 @@
 .card {
-  width: 280px;
   max-width: 100%;
   padding: 0;
 }
@@ -17,7 +16,7 @@ hr {
 
 #container {
   height: auto;
-  padding: 0px 0px 60px 0px;
+  padding: 0px 0px 30px 0px;
 }
 
 h1 {
@@ -86,8 +85,8 @@ footer {
   width: 100%;
 }
 
-a.nav-link, 
-a.nav-link:hover, 
+a.nav-link,
+a.nav-link:hover,
 a.nav-link:visited,
 a.contact,
 a.contact:hover,
@@ -95,7 +94,7 @@ a.contact:visited {
   color: #777777;
 }
 
-a.nav-link:hover, 
+a.nav-link:hover,
 a.portfolio:hover,
 a.contact:hover {
   font-weight: bold;
@@ -117,8 +116,7 @@ h5 {
 }
 
 .card-img-top {
-  width: 280px;
-  height: 280px;
+  height: 250px;
   width: 100%;
   object-fit: cover;
 }
@@ -128,8 +126,6 @@ h5 {
   background-color: #777777;
   margin: 0;
   padding: 3% 0% 0% 0%;
-  width: 280px;
-  height: 280px;
   width: 100%;
   object-fit: cover;
 }
@@ -148,8 +144,26 @@ h5 {
   clear: both;
 }
 
+.portfolio-grid {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .right-border {
     border-right: 0px solid #cccccc;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 880px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
