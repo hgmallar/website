@@ -7,7 +7,7 @@ function About(props) {
     <div id="container">
       <Header page="about"/>
       <Title title={props.title} />
-      <div className="row justify-content-center">
+      <div className="row justify-content-center width">
         <div id="content" className="col-md-10 bg-white">
           <ul className="lead hex">
             <li>

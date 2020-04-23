@@ -10,7 +10,7 @@ function Contact(props) {
     <div id="container">
       <Header page="contact"/>
       <Title title={props.title} />
-      <div className="row justify-content-center">
+      <div className="row justify-content-center width">
         <div id="content" className="col-md-10 bg-white">
           <p className="text-center">
             <span className="font-weight-bold">email: </span>
