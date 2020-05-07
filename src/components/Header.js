@@ -4,7 +4,7 @@ import { Navbar, Nav } from "react-bootstrap";
 
 const Header = (props) => (
   <header>
-    <Navbar expand="md" bg="light" className="navbar-expand-md p-0">
+    <Navbar expand="md" bg="light" className="p-0">
       <Nav.Link href="/" className="pb-0">
         <Navbar.Brand className="px-4 py-3 mb-0 ml-0">
           Hilary Mallar
