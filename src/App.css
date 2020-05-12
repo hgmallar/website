@@ -100,9 +100,14 @@ a.contact:visited {
 
 a.nav-link:hover,
 a.portfolio:hover,
-a.contact:hover {
+a.contact:hover,
+.text-shadow:hover {
   font-weight: bold;
   text-decoration: none;
+}
+
+.text-shadow:hover {
+  text-shadow: 1px 1px #000;
 }
 
 h5 {
@@ -152,6 +157,23 @@ h5 {
   display: grid;
   padding: 1rem;
   grid-template-columns: repeat(4, 1fr);
+}
+
+.animated-card {
+  height: 250px;
+  width: 100%;
+  background: grey;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 5px solid white;
+}
+
+.animated-card:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
