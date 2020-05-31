@@ -8,7 +8,7 @@ import Contact from "./components/Contact.js";
 import Footer from "./components/Footer.js";
 
 const App = () => (
-  <Router basename={process.env.PUBLIC_URL}>
+  <Router basename="/website">
     {console.log(process.env.PUBLIC_URL)}
     <div className="Hilary Mallar's Website">
       <Switch>
