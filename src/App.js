@@ -8,13 +8,13 @@ import Contact from "./components/Contact.js";
 import Footer from "./components/Footer.js";
 
 const App = () => (
-  <Router basename={`${process.env.PUBLIC_URL}/`}>
+  <Router basename={process.env.PUBLIC_URL}>
     {console.log(process.env.PUBLIC_URL)}
     <div className="Hilary Mallar's Website">
       <Switch>
         <Route exact path='/' render={() => <About title={"About Me"} />} />
-        <Route path='/about' render={() => <About title={"About Me"} />} />
-        <Route path='/contact' render={() => <Contact title={"Contact"} />} />
+        <Route exact path='/about' render={() => <About title={"About Me"} />} />
+        <Route exact path='/contact' render={() => <Contact title={"Contact"} />} />
         <Route
           path="/portfolio"
           render={() => <Portfolio title={"Portfolio"} />}
