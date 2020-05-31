@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Link } from "react";
 import PropTypes from "prop-types";
 import { Card } from "react-bootstrap";
 import { useSpring, animated } from "react-spring";
@@ -18,7 +18,7 @@ function ImageCard(props) {
   }));
   return (
     <Card className="bg-light text-white my-2 text-center">
-      <a href={props.link}>
+      <Link to={props.link}>
         <animated.img
           variant="top"
           src={props.src}
@@ -28,19 +28,19 @@ function ImageCard(props) {
           onMouseLeave={() => set({ xys: [0, 0, 1] })}
           style={{ transform: names.xys.interpolate(trans) }}
         />
-      </a>
+      </Link>
       <Card.Body className="overflow-auto">
         <Card.Title>
-          <a className="text-white text-shadow" href={props.link}>
+          <Link className="text-white text-shadow" to={props.link}>
             {props.title}
-          </a>
+          </Link>
         </Card.Title>
         <Card.Text>{props.summary}</Card.Text>
         <Card.Text>Uses: {props.code}</Card.Text>
         <Card.Title>
-          <a className="text-white text-shadow" href={props.codeLink}>
+          <Link className="text-white text-shadow" to={props.codeLink}>
             (CODE)
-          </a>
+          </Link>
         </Card.Title>
       </Card.Body>
     </Card>

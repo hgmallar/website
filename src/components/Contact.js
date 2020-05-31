@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Link } from "react";
 import PropTypes from "prop-types";
 import Header from "./Header.js";
 import Title from "./Title.js";
@@ -14,23 +14,23 @@ const Contact = (props) => (
       <div id="content" className="col-md-10 bg-white">
         <p className="text-center">
           <span className="font-weight-bold">email: </span>
-          <a className="contact" href="mailto:hilarymallar@gmail.com">
+          <Link className="contact" to="mailto:hilarymallar@gmail.com">
             hilarymallar@gmail.com
-          </a>
+          </Link>
         </p>
         <p className="text-center">
           <span className="font-weight-bold">phone: </span>(315) 254-8151
         </p>
         <p className="text-center">
-          <a
+          <Link
             className="contact"
-            href={resume}
+            to={resume}
             target="_blank"
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faFile} size="lg" className="mr-1" />
             Resume
-          </a>
+          </Link>
         </p>
       </div>
     </div>
