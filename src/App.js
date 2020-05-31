@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 
 import "./App.css";
 import About from "./components/About.js";
@@ -8,8 +8,8 @@ import Contact from "./components/Contact.js";
 import Footer from "./components/Footer.js";
 
 const App = () => (
-  <div className="Hilary Mallar's Website">
-    <Router>
+  <HashRouter basename="/">
+    <div className="Hilary Mallar's Website">
       <Switch>
         <Route exact path="/" render={() => <About title={"About Me"} />} />
         <Route path="/about" render={() => <About title={"About Me"} />} />
@@ -19,9 +19,9 @@ const App = () => (
           render={() => <Portfolio title={"Portfolio"} />}
         />
       </Switch>
-    </Router>
-    <Footer />
-  </div>
+      <Footer />
+    </div>
+  </HashRouter>
 );
 
 export default App;
