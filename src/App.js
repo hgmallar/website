@@ -11,9 +11,9 @@ const App = () => (
   <Router>
     <div className="Hilary Mallar's Website">
       <Switch>
-        <Route exact path="/" render={() => <About title={"About Me"} />} />
-        <Route path="/about" render={() => <About title={"About Me"} />} />
-        <Route path="/contact" render={() => <Contact title={"Contact"} />} />
+        <Route exact path={process.env.PUBLIC_URL + '/'} render={() => <About title={"About Me"} />} />
+        <Route path={process.env.PUBLIC_URL + '/about'} render={() => <About title={"About Me"} />} />
+        <Route path={process.env.PUBLIC_URL + '/contact'} render={() => <Contact title={"Contact"} />} />
         <Route
           path="/portfolio"
           render={() => <Portfolio title={"Portfolio"} />}
