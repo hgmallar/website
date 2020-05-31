@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
 import About from "./components/About.js";
@@ -8,7 +8,7 @@ import Contact from "./components/Contact.js";
 import Footer from "./components/Footer.js";
 
 const App = () => (
-  <HashRouter basename="/">
+  <Router>
     <div className="Hilary Mallar's Website">
       <Switch>
         <Route exact path="/" render={() => <About title={"About Me"} />} />
@@ -21,7 +21,7 @@ const App = () => (
       </Switch>
       <Footer />
     </div>
-  </HashRouter>
+  </Router>
 );
 
 export default App;
