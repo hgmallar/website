@@ -13,8 +13,8 @@ const App = () => (
     <div className="Hilary Mallar's Website">
       <Switch>
         <Route exact path='/' render={() => <About title={"About Me"} />} />
-        <Route exact path='/about' render={() => <About title={"About Me"} />} />
-        <Route exact path='/contact' render={() => <Contact title={"Contact"} />} />
+        <Route path='/about' render={() => <About title={"About Me"} />} />
+        <Route path='/contact' render={() => <Contact title={"Contact"} />} />
         <Route
           path="/portfolio"
           render={() => <Portfolio title={"Portfolio"} />}
