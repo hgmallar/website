@@ -26,7 +26,7 @@ const Header = (props) => (
             </span>
           </Nav.Link>
           <Nav.Link
-            href="/#/portfolio"
+            href="/portfolio"
             className={
               "px-0 ml-auto " +
               (props.page === "portfolio" ? "font-weight-bold" : "")
@@ -39,7 +39,7 @@ const Header = (props) => (
             </span>
           </Nav.Link>
           <Nav.Link
-            href="/#/contact"
+            href="/contact"
             className={
               "px-0 ml-auto " +
               (props.page === "contact" ? "font-weight-bold" : "")

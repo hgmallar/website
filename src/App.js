@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import "./App.css";
 import About from "./components/About.js";
@@ -8,7 +8,7 @@ import Contact from "./components/Contact.js";
 import Footer from "./components/Footer.js";
 
 const App = () => (
-  <HashRouter basename="/">
+  <BrowserRouter basename="/">
     {console.log(process.env.PUBLIC_URL)}
     <div className="Hilary Mallar's Website">
       <Switch>
@@ -22,7 +22,7 @@ const App = () => (
       </Switch>
       <Footer />
     </div>
-  </HashRouter>
+  </BrowserRouter>
 );
 
 export default App;
