@@ -156,7 +156,7 @@ h5 {
 .portfolio-grid {
   display: grid;
   padding: 1rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .animated-card {
