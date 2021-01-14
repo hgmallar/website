@@ -42,6 +42,11 @@ h1 {
   color: #d463bc;
 }
 
+.btn-primary {
+  background-color: #d463bc !important;
+  border-color: #d463bc !important;
+}
+
 .navbar {
   border-bottom: 2px solid #d463bc;
   font-family: "Georgia", Times, Times New Roman, serif;
@@ -89,18 +94,21 @@ footer {
   width: 100%;
 }
 
+.contact {
+  color: #212529;
+  line-height: 1.5;
+}
+
 a.nav-link,
 a.nav-link:hover,
-a.nav-link:visited,
-a.contact,
-a.contact:hover,
-a.contact:visited {
+a.nav-link:visited {
   color: #777777;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 a.nav-link:hover,
 a.portfolio:hover,
-a.contact:hover,
 .text-shadow:hover {
   font-weight: bold;
   text-decoration: none;
