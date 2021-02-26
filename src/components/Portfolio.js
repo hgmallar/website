@@ -16,11 +16,12 @@ const Portfolio = (props) => (
         title="Unpopular Baby"
         src={baby}
         link="https://www.unpopularbaby.com/"
-        summary="Full stack React web application to search for names using
+        summary="Full stack React web application and complimentary Android App to search for names using
                   popularity by decade and/or letter placements."
-        code="React.js, Chart.js, SQL, Node, Express, Axios, Sequelize, HTML, Flexbox,
+        code="React.js, React Native, Chart.js, SQL, Node, Express, Axios, Sequelize, Javascript, HTML, CSS, Flexbox,
                   FontAwesome, and Google Fonts. Responsive Bootstrap design."
         codeLink="https://github.com/hgmallar/uncommonBaby"
+        googlePlayLink="https://play.google.com/store/apps/details?id=com.unpopularbabyapp&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
       />
 
       <ImageCard

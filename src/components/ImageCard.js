@@ -42,6 +42,15 @@ function ImageCard(props) {
             (CODE)
           </a>
         </Card.Title>
+        {props.googlePlayLink && (<Card.Title>
+          <a href={props.googlePlayLink}>
+            <img
+              className="img-fluid w-25 mx-auto d-block"
+              alt="Get it on Google Play"
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+            />
+          </a>
+        </Card.Title>)}
       </Card.Body>
     </Card>
   );
