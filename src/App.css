@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.play {
+  max-width: 200px !important;
+}
+
 p {
   color: #777777;
   margin: 20px;
@@ -169,7 +173,7 @@ h5 {
 
 .animated-card {
   height: 250px;
-  width: 100%;
+  max-width: 100%;
   background: grey;
   border-radius: 5px;
   background-size: cover;

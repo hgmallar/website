@@ -37,20 +37,24 @@ function ImageCard(props) {
         </Card.Title>
         <Card.Text>{props.summary}</Card.Text>
         <Card.Text>Uses: {props.code}</Card.Text>
-        <Card.Title>
-          <a className="text-white text-shadow" href={props.codeLink}>
-            (CODE)
-          </a>
-        </Card.Title>
-        {props.googlePlayLink && (<Card.Title>
-          <a href={props.googlePlayLink}>
-            <img
-              className="img-fluid w-25 mx-auto d-block"
-              alt="Get it on Google Play"
-              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-            />
-          </a>
-        </Card.Title>)}
+        {props.codeLink && (
+          <Card.Title>
+            <a className="text-white text-shadow" href={props.codeLink}>
+              (CODE)
+            </a>
+          </Card.Title>
+        )}
+        {props.googlePlayLink && (
+          <Card.Title>
+            <a href={props.googlePlayLink}>
+              <img
+                className="img-fluid play w-75 mx-auto d-block"
+                alt="Get it on Google Play"
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+              />
+            </a>
+          </Card.Title>
+        )}
       </Card.Body>
     </Card>
   );
