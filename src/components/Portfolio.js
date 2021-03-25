@@ -49,7 +49,7 @@ const Portfolio = (props) => (
         src={integerApp}
         link="https://play.google.com/store/apps/details?id=com.integertiles&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
         summary="Android App to practice integer operations using manipulatives."
-        code="React Native"
+        code="React Native with Redux"
         googlePlayLink="https://play.google.com/store/apps/details?id=com.integertiles&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
       />
 

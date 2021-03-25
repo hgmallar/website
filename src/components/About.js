@@ -21,7 +21,7 @@ const About = (props) => (
           </li>
           <li>
             Experience in web development technologies like HTML, CSS,
-            Javascript, jQuery, Node, React, React Native, Express, MySQL, and
+            Javascript, jQuery, Node, React, React Native, Redux, Express, MySQL, and
             MongoDB, as well as Java, C, and C++.
           </li>
           <li>
