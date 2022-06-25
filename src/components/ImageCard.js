@@ -1,52 +1,36 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Card } from "react-bootstrap";
-import { useSpring, animated } from "react-spring";
-
-const calc = (x, y) => [
-  -(y - window.innerHeight / 2) / 20,
-  (x - window.innerWidth / 2) / 20,
-  1.1,
-];
-const trans = (x, y, s) =>
-  `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
 function ImageCard(props) {
-  const [names, set] = useSpring(() => ({
-    xys: [0, 0, 1],
-    config: { mass: 5, tension: 350, friction: 40 },
-  }));
   return (
-    <Card className="bg-light text-white my-2 text-center">
-      <a href={props.link}>
-        <animated.img
-          variant="top"
-          src={props.src}
-          alt={props.title}
-          className="animated-card"
-          onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-          onMouseLeave={() => set({ xys: [0, 0, 1] })}
-          style={{ transform: names.xys.interpolate(trans) }}
-        />
-      </a>
+    <Card className="my-2 text-center align-self-center ">
+      <Card.Img
+        className="rounded"
+        variant="top"
+        src={props.src}
+        alt={props.title}
+      />
       <Card.Body className="overflow-auto">
         <Card.Title>
-          <a className="text-white text-shadow" href={props.link}>
+          <a
+            className="grey-color text-shadow"
+            href={props.link}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             {props.title}
           </a>
         </Card.Title>
         <Card.Text>{props.summary}</Card.Text>
         <Card.Text>Uses: {props.code}</Card.Text>
-        {props.codeLink && (
-          <Card.Title>
-            <a className="text-white text-shadow" href={props.codeLink}>
-              (CODE)
-            </a>
-          </Card.Title>
-        )}
         {props.googlePlayLink && (
-          <Card.Title>
-            <a href={props.googlePlayLink}>
+          <Card.Title className="mb-0">
+            <a
+              href={props.googlePlayLink}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <img
                 className="img-fluid play w-75 mx-auto d-block"
                 alt="Get it on Google Play"

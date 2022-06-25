@@ -6,9 +6,9 @@ import resume from "./../documents/HilaryMallar_Resume.pdf";
 
 const Footer = () => (
   <footer className="footer">
-    <a href={resume} target="_blank" rel="noopener noreferrer">
+    {/* <a href={resume} target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faFile} size="lg" className="font-awesome mx-1" />
-    </a>
+    </a> */}
     <a href="https://www.linkedin.com/in/hilarymallar/">
       <FontAwesomeIcon
         icon={faLinkedin}
