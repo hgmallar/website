@@ -1,6 +1,6 @@
 # Portfolio
 
-[Start your search here.](https://hilarymallar.com/)
+[View the site here.](https://hilarymallar.com/)
 
 ### Portfolio website.
 
