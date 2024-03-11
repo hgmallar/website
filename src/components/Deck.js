@@ -1,33 +1,33 @@
 import React, { useState } from "react";
 import { useSprings, animated, interpolate } from "react-spring";
 import { useGesture } from "react-use-gesture";
-import baby from "./../images/baby.PNG";
-import babyApp from "./../images/babyApp.PNG";
+//import baby from "./../images/baby.PNG";
+//import babyApp from "./../images/babyApp.PNG";
 import integerApp from "./../images/IntegerTiles.PNG";
 import tiles from "./../images/tiles.PNG";
 import youthRally from "./../images/frontpage.PNG";
 import ImageCard from "./ImageCard";
 
 const cards = [
-  {
-    title: "Unpopular Baby",
-    src: baby,
-    link: "https://www.unpopularbaby.com/",
-    summary:
-      "Full stack React web application to search for names using popularity by decade and/or letter placements.",
-    code: "React.js, React Native, Chart.js, SQL, Node, Express, Axios, Sequelize, Javascript, HTML, CSS, Flexbox, FontAwesome, and Google Fonts. Responsive Bootstrap design.",
-    googlePlayLink: "",
-  },
-  {
-    title: "Unpopular Baby App",
-    src: babyApp,
-    link: "https://play.google.com/store/apps/details?id=com.unpopularbabyapp&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
-    summary:
-      "Android App to search for names using popularity by decade and/or letter placements.",
-    code: "React Native",
-    googlePlayLink:
-      "https://play.google.com/store/apps/details?id=com.unpopularbabyapp&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
-  },
+  // {
+  //   title: "Unpopular Baby",
+  //   src: baby,
+  //   link: "https://www.unpopularbaby.com/",
+  //   summary:
+  //     "Full stack React web application to search for names using popularity by decade and/or letter placements.",
+  //   code: "React.js, React Native, Chart.js, SQL, Node, Express, Axios, Sequelize, Javascript, HTML, CSS, Flexbox, FontAwesome, and Google Fonts. Responsive Bootstrap design.",
+  //   googlePlayLink: "",
+  // },
+  // {
+  //   title: "Unpopular Baby App",
+  //   src: babyApp,
+  //   link: "https://play.google.com/store/apps/details?id=com.unpopularbabyapp&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
+  //   summary:
+  //     "Android App to search for names using popularity by decade and/or letter placements.",
+  //   code: "React Native",
+  //   googlePlayLink:
+  //     "https://play.google.com/store/apps/details?id=com.unpopularbabyapp&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
+  // },
   {
     title: "Integer Operations with Tiles",
     src: tiles,
